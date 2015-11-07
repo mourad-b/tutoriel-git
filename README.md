@@ -14,11 +14,15 @@
 
 ### Installation
 
+*Pour pouvoir travailler avec un outil de versionnement, il faut que cet outil soit installé sur votre ordinateur.*
+
 * Sur GNU/Linux ou Solaris : [Installation depuis un terminal](http://git-scm.com/download/linux)
 * Sur Mac OSX : [Téléchargement et installation](http://git-scm.com/download/mac)
 * Sur Windows : [Téléchargement et installation](http://git-scm.com/download/win)
 
 ### configuration
+
+*Il y a certainement plein d'autres options de configuration, mais c'est pour commencer!*
 
 * Vérifier que git est installé : `git --version`
 * Définir votre nom : `git config --global "Votre Nom"` (Vous sur GitHub ou pas)
@@ -36,15 +40,21 @@
 
 ### Votre premier fichier
 
+*Un simple fichier texte contenant vos idées, un poème, une liste de tâche ou un début de page html, ou pourquoi pas une image?*
+
 * Créer un fichier : `touch index.html` (ou n'importe quel autre nom de fichier)
 * Éditer ce fichier pour y écrire quelque chose : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte).
 * S'informer sur l'état du projet : `git status` (Git vous dira qu'il existe un fichier «index.html» non suivi)
 * Demander à git de suivre les versions de ce fichier : `git add index.html` (ou le nom de votre fichier)
 * S'informer sur l'état du projet : `git status` (Git vous dira qu'il y a un nouveau fichier)
 * Dire à git de prendre en compte cette version du fichier avec un commentaire : `git commit --message "création du fichier"`
+* S'informer sur l'état du projet : `git status` (Git vous dira que la copie de travail est propre et qu'il n'y a rien à valider)
 
 ### Vos premières modifications
 
+* Éditer votre fichier pour en modifier le contenu : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte).
+* S'informer sur l'état du projet : `git status` (Git vous dira que le fichier «index.html» est modifié)
+* Comparer le fichier avant et après ces modification pour voir les différences : `git diff` (les lignes commaçamt par un + sont les ajouts, celles commençamt par un - les suppressions)
 
 ## Autres ressources
 
