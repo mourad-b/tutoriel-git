@@ -1,6 +1,6 @@
-## POUR COMMENCER QUELQUE PART
+## POUR COMMENCER AVEC GIT et GITHUB
 
-*Pour en apprendre sur Git et GitHub*
+*Pour en apprendre sur Git (outil en [ligne de commande](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)) et GitHub ([application web](https://fr.wikipedia.org/wiki/Application_web) pour partager du code).*
 
 * Markdown : [la syntaxe markdown](https://help.github.com/articles/markdown-basics/)
 * C'est quoi Git et GitHub : [une vidéo en français (durée : 01:27:08)](https://www.youtube.com/watch?v=V6Zo68uQPqE)
@@ -8,15 +8,46 @@
 * Un exemple de fichier (en anglais): [README.md](https://gist.github.com/indexzero/1363524#file-readme-outline-md)
 * License : [GPL v3 licence](http://dachary.org/loic/gpl-french.pdf)
 
-**Résumé des commandes utilisées dans la vidéo**
+## Résumé des commandes utilisées dans la vidéo
 
 *Prérequis : il faut que le logiciel git soit installé*
 
-* Sur GNU/Linux : TODO
-* Sur Mac OSX : TODO
-* Sur Windows : TODO
+### Installation
 
-1. Vérifier que git est installé : `git --version`
-2. Définir votre nom : `git config --global "Votre Nom"` (Vous sur GitHub ou pas)
-3. Définir votre courriel : `git config --global "quelque.chose@domaine.extension"` (Celle utilisée sur GitHub ou pas)
-4. Afficher votre configuration actuelle : `git config -l`
+* Sur GNU/Linux ou Solaris : [Installation depuis un terminal](http://git-scm.com/download/linux)
+* Sur Mac OSX : [Téléchargement et installation](http://git-scm.com/download/mac)
+* Sur Windows : [Téléchargement et installation](http://git-scm.com/download/win)
+
+### configuration
+
+* Vérifier que git est installé : `git --version`
+* Définir votre nom : `git config --global "Votre Nom"` (Vous sur GitHub ou pas)
+* Définir votre courriel : `git config --global "quelque.chose@domaine.extension"` (Celui utilisé sur GitHub ou pas)
+* Afficher votre configuration actuelle : `git config -l`
+
+### Créer un projet
+
+*Ça revient simplement à créer un dossier sur votre ordinateur pour y mettre un unique fichier ou toute une arborescence de fichiers et dossiers*
+
+* Créer un dossier pour votre projet : `mkdir dossier` (Remplacez «dossier» par ce que vous voulez)
+* Rentrer dans ce dossier : `cd dossier`
+* Commencer à [gérer les versions](https://fr.wikipedia.org/wiki/Gestion_de_versions) du(des) fichier(s) du projet : `git init`
+* S'informer sur l'état du projet : `git status` (peut être utilisé n'importe quand)
+
+### Votre premier fichier
+
+* Créer un fichier : `touch index.html` (ou n'importe quel autre nom de fichier)
+* Éditer ce fichier pour y écrire quelque chose : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte).
+* S'informer sur l'état du projet : `git status` (Git vous dira qu'il existe un fichier «index.html» non suivi)
+* Demander à git de suivre les versions de ce fichier : `git add index.html` (ou le nom de votre fichier)
+* S'informer sur l'état du projet : `git status` (Git vous dira qu'il y a un nouveau fichier)
+* Dire à git de prendre en compte cette version du fichier avec un commentaire : `git commit --message "création du fichier"`
+
+### Vos premières modifications
+
+
+## Autres ressources
+
+http://bloginfo.rakotonirina.net/git-commencer-a-utiliser-git/
+http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/
+http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2/
