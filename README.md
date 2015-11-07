@@ -1,11 +1,9 @@
 # tutoriel-git
 
-## POUR COMMENCER AVEC GIT et GITHUB
+Quelques pistes en français pour démarrer avec **git** (outil en [ligne de commande](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)) et **GitHub** ([application web](https://fr.wikipedia.org/wiki/Application_web) pour partager du code).
 
-*Pour en apprendre sur Git (outil en [ligne de commande](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)) et GitHub ([application web](https://fr.wikipedia.org/wiki/Application_web) pour partager du code).*
-
-* Markdown : [la syntaxe markdown](https://help.github.com/articles/markdown-basics/)
-* C'est quoi Git et GitHub : [une vidéo en français (durée : 01:27:08)](https://www.youtube.com/watch?v=V6Zo68uQPqE)
+* Syntaxe utilisée pour ce fichier README.md : [la syntaxe markdown](https://help.github.com/articles/markdown-basics/)
+* C'est quoi Git et GitHub : [une vidéo en français (durée : 01:27:08)](https://www.youtube.com/watch?v=V6Zo68uQPqE) Merci aux auteurs!
 * Un éditeur de fichiers textes : [Atom](https://atom.io/)
 * Un exemple de fichier (en anglais): [README.md](https://gist.github.com/indexzero/1363524#file-readme-outline-md)
 * License : [GPL v3 licence](http://dachary.org/loic/gpl-french.pdf)
@@ -33,7 +31,7 @@
 
 ### Créer un projet
 
-*Ça revient simplement à créer un dossier sur votre ordinateur pour y mettre un unique fichier ou toute une arborescence de fichiers et dossiers*
+*Ça revient simplement à créer un dossier sur votre ordinateur pour y mettre un unique fichier ou toute une arborescence de fichiers et dossiers.*
 
 * Créer un dossier pour votre projet : `mkdir dossier` (Remplacez «dossier» par ce que vous voulez)
 * Rentrer dans ce dossier : `cd dossier`
@@ -50,17 +48,16 @@
 * Demander à git de suivre les versions de ce fichier : `git add index.html` (ou le nom de votre fichier)
 * S'informer sur l'état du projet : `git status` (Git vous dira qu'il y a un nouveau fichier)
 * Dire à git de prendre en compte cette version du fichier avec un commentaire : `git commit --message "création du fichier"`
-* S'informer sur l'état du projet : `git status` (Git vous dira que la copie de travail est propre et qu'il n'y a rien à valider)
+* S'informer sur l'état du projet : `git status` (Git vous affichera que la copie de travail est propre et qu'il n'y a rien à valider ou *à commiter*)
 
 ### Vos premières modifications
 
 * Éditer votre fichier pour en modifier le contenu : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte). (votre index.html ou autre fichiers)
 * S'informer sur l'état du projet : `git status` (Git vous dira que le fichier «index.html» est modifié)
-* Comparer le fichier avant et après ces modification pour voir les différences : `git diff` (les lignes commaçamt par un + sont les ajouts, celles commençamt par un - les suppressions)
+* Comparer le fichier avant et après ces modification pour voir les différences : `git diff` (les lignes qui commencent par un + sont les ajouts, celles par un - les suppressions)
 * Demander à git de suivre les versions de ce fichier : `git add index.html` (ou le nom de votre fichier)
 * Dire à git de prendre en compte cette version du fichier avec un commentaire : `git commit -m "modification du fichier"` (notez que --message "commentaire" peut-être raccourcis en -m "commentaire").
-* Demander à git une listes des commits et leur commentaires : `git log` (Avec l'auteur, la date et le commentaire)
-
+* Demander à git une listes des commits et leur commentaires : `git log` (Git vous affichera un ID, l'auteur, la date et le commentaire de chaque *commit*)
 
 TODO : la suite :D
 
