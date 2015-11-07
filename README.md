@@ -1,3 +1,5 @@
+# tutoriel-git
+
 ## POUR COMMENCER AVEC GIT et GITHUB
 
 *Pour en apprendre sur Git (outil en [ligne de commande](https://fr.wikipedia.org/wiki/Interface_en_ligne_de_commande)) et GitHub ([application web](https://fr.wikipedia.org/wiki/Application_web) pour partager du code).*
@@ -20,7 +22,7 @@
 * Sur Mac OSX : [Téléchargement et installation](http://git-scm.com/download/mac)
 * Sur Windows : [Téléchargement et installation](http://git-scm.com/download/win)
 
-### configuration
+### Configuration
 
 *Il y a certainement plein d'autres options de configuration, mais c'est pour commencer!*
 
@@ -52,12 +54,22 @@
 
 ### Vos premières modifications
 
-* Éditer votre fichier pour en modifier le contenu : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte).
+* Éditer votre fichier pour en modifier le contenu : En utilisant un [éditeur de texte](https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte). (votre index.html ou autre fichiers)
 * S'informer sur l'état du projet : `git status` (Git vous dira que le fichier «index.html» est modifié)
 * Comparer le fichier avant et après ces modification pour voir les différences : `git diff` (les lignes commaçamt par un + sont les ajouts, celles commençamt par un - les suppressions)
+* Demander à git de suivre les versions de ce fichier : `git add index.html` (ou le nom de votre fichier)
+* Dire à git de prendre en compte cette version du fichier avec un commentaire : `git commit -m "modification du fichier"` (notez que --message "commentaire" peut-être raccourcis en -m "commentaire").
+* Demander à git une listes des commits et leur commentaires : `git log` (Avec l'auteur, la date et le commentaire)
+
+
+TODO : la suite :D
 
 ## Autres ressources
 
-http://bloginfo.rakotonirina.net/git-commencer-a-utiliser-git/
-http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/
-http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2/
+* [Autre tutoriel de base](http://christopheducamp.com/2013/12/15/github-pour-nuls-partie-1/)
+* [Et sa suite](http://christopheducamp.com/2013/12/16/gitHub-pour-nuls-partie-2/)
+* [Autre tutoriel et explications sur le fonctionnement de git](http://www.robusta.io/content/tutoriel/git/start-git.html)
+* [Avec quelques info sur .gitignore](http://bloginfo.rakotonirina.net/git-commencer-a-utiliser-git/)
+* [Page wikipedia](https://fr.wikipedia.org/wiki/Git)
+* [La liste des commandes de git](http://git-scm.com/docs)
+* [Visualiser des commit, branch, merge ...](http://www.wei-wang.com/ExplainGitWithD3/)
